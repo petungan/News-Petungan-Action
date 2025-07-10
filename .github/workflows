@@ -28,10 +28,10 @@ jobs:
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          repoToken: '${{ }'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEWS_PETUNGAN }}'
-          projectId: your-firebase-project-id # Ganti dengan ID proyek Firebase Anda
+          projectId: petugan-jawa-news # Ganti dengan ID proyek Firebase Anda
           channelId: live
-          target: your-hosting-target-name # Hanya jika Anda memiliki multi-site hosting, jika tidak hapus baris ini
+       
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
