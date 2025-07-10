@@ -14,7 +14,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Sesuaikan dengan versi Node.js yang dibutuhkan proyek Anda
+          node-version: '22' # Sesuaikan dengan versi Node.js yang dibutuhkan proyek Anda
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
