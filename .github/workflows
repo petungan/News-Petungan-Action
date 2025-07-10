@@ -17,13 +17,6 @@ jobs:
         with:
           node-version: '18' # Sesuaikan dengan versi Node.js yang dibutuhkan proyek Anda
 
-      # Langkah ini hanya diperlukan jika proyek Anda membutuhkan build step (misalnya, React, Vue, Angular)
-      # Jika proyek Anda hanya file HTML/CSS/JS statis murni, Anda bisa menghapus bagian ini.
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build # Ganti dengan perintah build proyek Anda (misalnya, 'yarn build', 'ng build --prod')
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
